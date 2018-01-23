@@ -1,3 +1,7 @@
+html, body {
+    width: 400px;
+}
+
 .nav-pills .nav-link {
     border-radius: 0px;
     margin: 2px 2px 0.5px 2px;
@@ -47,7 +51,15 @@ a:hover {
     background-color: #58bf01;
     border-color: #58bf01;
 }
-/* 
-div.wrapper {
-    min-width: 450px;
-} */
+
+.bg-red {
+   background: #dd3645 !important;
+}
+
+.bg-green {
+    background: #58bf01 !important;
+ }
+
+ .neo_price, .gas_price {
+     font-weight: 700;
+ }

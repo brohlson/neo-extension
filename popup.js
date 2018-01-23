@@ -79,7 +79,30 @@ var changeCurrency = function() {
         $(".gas_place").text(coinData.gasPlaceBTC);
         $(".gas_time").text(coinData.gasTimeBTC);
     }
-    console.log("Currency values updated")
+    checkChange();
+    console.log("Currency values updated");
+}
+
+// Check if negative or positive
+var checkChange = function() {
+    let neoChange = parseFloat($(".neo_change").text());
+    let gasChange = parseFloat($(".gas_change").text());
+    if (neoChange < 0) {
+        $(".neo_change").addClass("bg-red").removeClass("bg-green");
+    }
+    if (neoChange > 0) {
+        $(".neo_change").addClass("bg-green");
+        $(".neo_change").removeClass("bg-red");
+    }
+    if (gasChange < 0) {
+        $(".gas_change").addClass("bg-red");
+        $(".gas_change").removeClass("bg-green");
+    }
+    if (gasChange > 0) {
+        $(".gas_change").addClass("bg-green");
+        $(".gas_change").removeClass("bg-red");
+    }
+    
 }
 
 // Click Events 

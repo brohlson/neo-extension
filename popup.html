@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>NEO Price Tracker</title>
-    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="popup.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -23,15 +23,17 @@
         <ul class="nav nav-pills nav-fill">
             <li class="nav-item">
                 <a class="nav-link active" id="usdPill" href="#">
-                    <i class="fas fa-dollar-sign"></i> USD</a>
+                    <i class="fa fa-usd"></i> USD</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="eurPill" href="#">
-                    <i class="fas fa-euro-sign"></i> EUR</a>
+                    <i class="fa fa-euro" aria-hidden="true"></i>
+                    </i> EUR</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" id="btcPill" href="#">
-                    <i class="fab fa-bitcoin"></i> BTC</a>
+                    <i class="fa fa-btc" aria-hidden="true"></i>
+                    BTC</a>
             </li>
         </ul>
         <div class="list-group">
@@ -41,19 +43,19 @@
                         <img src="icon_128.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">NEO (NEO)</h5>
                     <small>
                         <span class="neo_time field">
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                         </span> via
                         <span class="neo_place field">
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                         </span>
                     </small>
                 </div>
                 <p class="mb-1 ml-4">
                     <span class="neo_price field">
-                        <i class="fas fa-spinner fa-spin"></i>
+                        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                     </span>
-                    <span class="neo_change bg-dark p-1 field">
-                        <i class="fas fa-spinner fa-spin"></i>
+                    <span class="neo_change bg-dark p-1 field ml-2">
+                        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                     </span>
                 </p>
             </a>
@@ -63,19 +65,19 @@
                         <img src="icon_128.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">Gas (GAS)</h5>
                     <small>
                         <span class="gas_time field">
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                         </span> via
                         <span class="gas_place field">
-                            <i class="fas fa-spinner fa-spin"></i>
+                            <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                         </span>
                     </small>
                 </div>
                 <p class="mb-1 ml-4">
                     <span class="gas_price field">
-                        <i class="fas fa-spinner fa-spin"></i>
+                        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                     </span>
-                    <span class="gas_change bg-dark p-1 field">
-                        <i class="fas fa-spinner fa-spin"></i>
+                    <span class="gas_change bg-dark p-1 field ml-2">
+                        <i class="fa fa-spinner fa-spin" aria-hidden="true"></i>
                     </span>
                 </p>
             </a>
@@ -84,12 +86,11 @@
             <a href="https://bit.ly/co_binance" target="_blank" class="btn btn-primary m-1">Buy NEO</a>
             <a href="https://chaseohlson.com/how-to-buy-antshares" target="_blank" class="btn btn-primary m-1">How to Buy</a>
             <a href="#" id="refresh" class="btn btn-primary m-1 float-right">
-                <i class="fas fa-sync-alt refresh-spinner"></i> Refresh</a>
+                <i class="fa fa-refresh" aria-hidden="true"></i> Refresh</a>
         </div>
     </div>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="popup.js"></script>
 
 </html>
