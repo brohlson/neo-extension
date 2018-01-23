@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>NEO Price Tracker</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="popup.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="navbar navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="icon_128.png" width="30" height="30" class="d-inline-block align-top" alt=""> NEO Price Tracker
+            </a>
+        </nav>
+        <ul class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" id="usdPill" href="#">
+                    <i class="fas fa-dollar-sign"></i> USD</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="eurPill" href="#">
+                    <i class="fas fa-euro-sign"></i> EUR</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="btcPill" href="#">
+                    <i class="fab fa-bitcoin"></i> BTC</a>
+            </li>
+        </ul>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">
+                        <img src="icon_128.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">NEO (NEO)</h5>
+                    <small>
+                        <span class="neo_time field">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span> via
+                        <span class="neo_place field">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </small>
+                </div>
+                <p class="mb-1 ml-4">
+                    <span class="neo_price field">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                    <span class="neo_change bg-dark p-1 field">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </p>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">
+                        <img src="icon_128.png" width="30" height="30" class="d-inline-block align-top mr-1" alt="">Gas (GAS)</h5>
+                    <small>
+                        <span class="gas_time field">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span> via
+                        <span class="gas_place field">
+                            <i class="fas fa-spinner fa-spin"></i>
+                        </span>
+                    </small>
+                </div>
+                <p class="mb-1 ml-4">
+                    <span class="gas_price field">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                    <span class="gas_change bg-dark p-1 field">
+                        <i class="fas fa-spinner fa-spin"></i>
+                    </span>
+                </p>
+            </a>
+        </div>
+        <div>
+            <a href="https://bit.ly/co_binance" target="_blank" class="btn btn-primary m-1">Buy NEO</a>
+            <a href="https://chaseohlson.com/how-to-buy-antshares" target="_blank" class="btn btn-primary m-1">How to Buy</a>
+            <a href="#" id="refresh" class="btn btn-primary m-1 float-right">
+                <i class="fas fa-sync-alt refresh-spinner"></i> Refresh</a>
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="popup.js"></script>
+
+</html>
